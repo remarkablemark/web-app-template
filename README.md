@@ -71,7 +71,9 @@ $ npm run build
 $ yarn build
 ```
 
-Deploy (modify the script in `package.json` first):
+Deploy:
+
+Before deploying, make sure the `deploy` script and the `homepage` field in `package.json` are correct. The current setup deploys to [GitHub Pages](https://pages.github.com) by pushing the `build/` directory to the remote's `gh-pages` branch.
 
 ```sh
 # with npm
