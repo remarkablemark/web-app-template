@@ -85,6 +85,10 @@ npm run deploy
 yarn deploy
 ```
 
+## Environment Variables
+
+Environment variables work the same as [create-react-app](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables) except custom environment variables begin with `APP_` instead of `REACT_APP_`.
+
 ## Test
 
 There are no tests in the template, just linting:
