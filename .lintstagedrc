@@ -3,12 +3,9 @@
     "npm run lint:fix",
     "git add"
   ],
-  "src/**/*.{json,css}": [
+  "*.{json,css,md}": [
     "prettier --write",
-  "git add"
+    "git add"
   ],
-  "*.md": [
-    "prettier --write",
-  "git add"
-  ]
+  ".*{rc,json}": "jsonlint"
 }
