@@ -1,5 +1,6 @@
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
+// registerServiceWorker();
 
 document.getElementById('app').innerHTML = `
   <h1>Welcome to <code>web-app-template</code>.</h1>
@@ -7,5 +8,3 @@ document.getElementById('app').innerHTML = `
     View source
   </a>
 `;
-
-registerServiceWorker();
