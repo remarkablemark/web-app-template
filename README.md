@@ -1,8 +1,10 @@
 # web-app-template
 
-A framework-agnostic web app template. It's a stripped down version of [create-react-app@1](https://github.com/facebook/create-react-app/tree/v1.1.5) (ejected) but with dependencies like React removed.
+A framework-agnostic web app template.
 
-[See demo](https://remarkablemark.github.io/web-app-template/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) but also ejected with dependencies like React removed.
+
+[See demo.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
@@ -101,7 +103,7 @@ $ npm run release
 $ yarn release
 ```
 
-Deploy to [GitHub Pages](https://pages.github.com):
+Deploy to [GitHub Pages](https://pages.github.com/):
 
 ```sh
 # with npm
@@ -123,12 +125,12 @@ There are no tests, just linting:
 
 ```sh
 # with npm
-npm run lint
-npm run lint:fix
+$ npm run lint
+$ npm run lint:fix
 
 # with yarn
-yarn lint
-yarn lint:fix
+$ yarn lint
+$ yarn lint:fix
 ```
 
 Feel free to add a [testing framework](https://github.com/sorrycc/awesome-javascript#testing-frameworks).
@@ -169,8 +171,7 @@ $ tree -I 'build|node_modules'
 ├── config
 │   ├── env.js
 │   ├── paths.js
-│   ├── webpack.config.dev.js
-│   ├── webpack.config.prod.js
+│   ├── webpack.config.js
 │   └── webpackDevServer.config.js
 ├── package.json
 ├── public
@@ -182,10 +183,24 @@ $ tree -I 'build|node_modules'
 └── src
     ├── index.css
     ├── index.js
-    └── registerServiceWorker.js
+    └── serviceWorker.js
 
-4 directories, 15 files
+4 directories, 14 files
 ```
+
+## Diff
+
+Compared to `create-react-app`, the additional dependencies saved to `package.json` are:
+
+- [@commitlint/{cli,config-conventional}](https://github.com/conventional-changelog/commitlint)
+- [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [gitploy](https://github.com/remarkablemark/gitploy)
+- [husky](https://github.com/typicode/husky)
+- [jsonlint](https://github.com/zaach/jsonlint)
+- [lint-staged](https://github.com/okonet/lint-staged)
+- [prettier](https://github.com/prettier/prettier)
+- [standard-version](https://github.com/conventional-changelog/standard-version)
 
 ## License
 
