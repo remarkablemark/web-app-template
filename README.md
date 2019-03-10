@@ -192,6 +192,7 @@ $ tree -I 'build|node_modules'
 
 Compared to `create-react-app`, the additional dependencies saved to `package.json` are:
 
+- [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
 - [@commitlint/{cli,config-conventional}](https://github.com/conventional-changelog/commitlint)
 - [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
