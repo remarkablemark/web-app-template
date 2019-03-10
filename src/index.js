@@ -1,6 +1,5 @@
 import './index.css';
-// import registerServiceWorker from './registerServiceWorker';
-// registerServiceWorker();
+import * as serviceWorker from './serviceWorker';
 
 document.getElementById('app').innerHTML = `
   <h1>Welcome to <code>web-app-template</code>.</h1>
@@ -8,3 +7,8 @@ document.getElementById('app').innerHTML = `
     View Source
   </a>
 `;
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
