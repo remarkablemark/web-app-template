@@ -65,11 +65,5 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "private": true,
-  "license": "MIT",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "license": "MIT"
 }
