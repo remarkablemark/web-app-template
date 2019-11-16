@@ -1,10 +1,10 @@
 # web-app-template
 
-A framework-agnostic web app template.
+A web app template that is framework agnostic.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) but also ejected with dependencies like React removed.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) but dependencies like React have been removed.
 
-[See demo.](https://remarkablemark.github.io/web-app-template/)
+[View app.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
@@ -39,11 +39,7 @@ You should also update the following files:
 Install dependencies:
 
 ```sh
-# with npm
 $ npm install
-
-# or with yarn
-$ yarn
 ```
 
 Initialize new repository:
@@ -60,7 +56,7 @@ $ git add .
 $ git commit -m "feat: initialize project from web-app-template"
 ```
 
-> Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format. (Used when releasing a new version.)
+> Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used when releasing a new version.
 
 Don't forget to [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or to another remote repository:
 
@@ -69,51 +65,39 @@ $ git remote add origin <remote-repository-url>
 $ git push origin -u origin master
 ```
 
-## Scripts
+## Available Scripts
 
-Start development server:
+In the project directory, you can run:
 
-```sh
-# with npm
-$ npm start
+### `npm start`
 
-# or with yarn
-$ yarn start
-```
+Runs the app in the development mode.
 
-Build production artifacts:
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```sh
-# with npm
-$ npm run build
+The page will reload if you make edits.
 
-# or with yarn
-$ yarn build
-```
+You will also see any lint errors in the console.
 
-> **Note**: Make sure the `"homepage"` field in `package.json` is correct.
+### `npm run build`
 
-Create a release using [standard-version](https://github.com/conventional-changelog/standard-version):
+Builds the app for production to the `build` folder.
 
-```sh
-# with npm
-$ npm run release
+It correctly bundles in production mode and optimizes the build for the best performance.
 
-# or with yarn
-$ yarn release
-```
+The build is minified and the filenames include the hashes.
 
-Deploy to [GitHub Pages](https://pages.github.com/):
+Your app is ready to be deployed!
 
-```sh
-# with npm
-$ npm run deploy
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# or with yarn
-$ yarn deploy
-```
+### `npm run release`
 
-It force pushes the `./build/` directory to the remote repository's `gh-pages` branch.
+Bumps the `package.json` using [standard-version](https://github.com/conventional-changelog/standard-version).
+
+### `npm run deploy`
+
+Deploys the app to [GitHub Pages](https://pages.github.com/) by force pushing the `build` folder to the remote repository's `gh-pages` branch.
 
 ## Environment Variables
 
@@ -124,23 +108,18 @@ Environment variables work the same as [create-react-app](https://facebook.githu
 There are no tests, just linting:
 
 ```sh
-# with npm
 $ npm run lint
 $ npm run lint:fix
-
-# with yarn
-$ yarn lint
-$ yarn lint:fix
 ```
 
-Feel free to add a [testing framework](https://github.com/sorrycc/awesome-javascript#testing-frameworks).
+Feel free to add a [testing framework](https://github.com/sorrycc/awesome-javascript#testing-frameworks) of your choice.
 
-For manual testing, you can build the (production) app locally:
+You try to build the production app locally before deploying it:
 
 ```sh
 # git stash
 $ sed -i '' '/homepage/d' package.json
-$ npm run build # yarn build
+$ npm run build
 # git checkout -- package.json
 # git stash pop
 ```
@@ -153,7 +132,7 @@ $ python -m SimpleHTTPServer
 # press `Ctrl + C` to stop the server
 ```
 
-And access it on `localhost:8000`:
+View static page:
 
 ```sh
 $ open http://localhost:8000
@@ -170,13 +149,19 @@ $ tree -I 'build|node_modules'
 ├── README.md
 ├── config
 │   ├── env.js
+│   ├── modules.js
 │   ├── paths.js
+│   ├── pnpTs.js
 │   ├── webpack.config.js
 │   └── webpackDevServer.config.js
 ├── package.json
 ├── public
+│   ├── favicon.ico
 │   ├── index.html
-│   └── manifest.json
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
 ├── scripts
 │   ├── build.js
 │   └── start.js
@@ -185,7 +170,7 @@ $ tree -I 'build|node_modules'
     ├── index.js
     └── serviceWorker.js
 
-4 directories, 14 files
+4 directories, 20 files
 ```
 
 ## Diff
