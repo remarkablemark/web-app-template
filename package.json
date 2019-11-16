@@ -45,7 +45,7 @@
     "husky": "3.0.9",
     "is-wsl": "2.1.1",
     "jsonlint": "1.6.3",
-    "lint-staged": "8.1.5",
+    "lint-staged": "9.4.3",
     "mini-css-extract-plugin": "0.8.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.5.0",
