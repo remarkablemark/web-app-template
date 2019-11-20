@@ -15,8 +15,9 @@
   },
   "plugins": ["babel", "prettier"],
   "rules": {
-    "no-cond-assign": 2,
+    "no-cond-assign": "error",
     "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
-    "prettier/prettier": 2
+    "prettier/prettier": "error",
+    "sort-imports": "error"
   }
 }
