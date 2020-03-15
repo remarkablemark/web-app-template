@@ -3,9 +3,6 @@
 # ensure working index is clean
 stash_output=$(git add . && git stash)
 
-# run lint
-npm run lint
-
 # remove `build` folder
 npm run clean
 
@@ -14,7 +11,7 @@ npm run build
 
 # deploy `build` contents to remote branch `gh-pages`
 if [[ $(command -v npx) ]]; then
-  npx --no-install gitploy build gh-pages
+  npx gitploy build gh-pages
 else
   $(npm bin)/gitploy build gh-pages
 fi

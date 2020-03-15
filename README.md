@@ -4,37 +4,36 @@ A web app template that is framework agnostic.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) but dependencies like React have been removed.
 
-[View app.](https://remarkablemark.github.io/web-app-template/)
+[View app](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
-- [Node.js 8.6+](https://nodejs.org/en/download/)
-- [npm 5.3+](https://www.npmjs.com/get-npm) or [Yarn 1+](https://yarnpkg.com/lang/en/docs/install/)
+- [Node.js 8.10+](https://nodejs.org/en/download/)
+- [npm 5.6+](https://www.npmjs.com/get-npm) or [Yarn 1+](https://yarnpkg.com/lang/en/docs/install/)
 
 ## Installation
 
 Clone repository:
 
 ```sh
-$ git clone https://github.com/remarkablegames/web-app-template.git
+$ git clone https://github.com/remarkablemark/web-app-template.git
 ```
 
-Rename project:
+Rename project (replace `my-app` and `My App` with your app name):
 
 ```sh
-$ mv web-app-template my-app
-$ cd my-app
+$ mv web-app-template my-app && cd $_
 $ git grep -l web-app-template | xargs sed -i '' -e 's/web-app-template/my-app/g'
 $ git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App/g'
 ```
 
-Update additional files:
+Update files:
 
-- [ ] README.md
-- [ ] package.json
-- [ ] public/index.html
-- [ ] public/manifest.json
-- [ ] src/index.js
+- [ ] `README.md`
+- [ ] `package.json`
+- [ ] `public/index.html`
+- [ ] `public/manifest.json`
+- [ ] `src/index.js`
 
 Install dependencies:
 
@@ -56,9 +55,9 @@ $ git add .
 $ git commit -m "feat: initialize project from web-app-template"
 ```
 
-> Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used when releasing a new version.
+> Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used during release.
 
-Don't forget to [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or to another remote repository:
+When you're ready, you can [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or another remote repository:
 
 ```sh
 $ git remote add origin <remote-repository-url>
@@ -89,11 +88,11 @@ The build is minified and the filenames include the hashes.
 
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://create-react-app.dev/docs/deployment/) for more information.
 
 ### `npm run release`
 
-Bumps the `package.json` using [standard-version](https://github.com/conventional-changelog/standard-version).
+Bumps the `package.json` version with [standard-version](https://github.com/conventional-changelog/standard-version).
 
 ### `npm run deploy`
 
@@ -101,59 +100,65 @@ Deploys the app to [GitHub Pages](https://pages.github.com/) by force pushing th
 
 ## Environment Variables
 
-Environment variables work the same as [create-react-app](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables) except the custom environment variables begin with `APP_` instead of `REACT_APP_`.
+Environment variables work similarly to [Create React App](https://create-react-app.dev/docs/adding-custom-environment-variables/) except they begin with `WEB_APP_` instead of `REACT_APP_`.
 
-## Test
+For example:
 
-There are no tests, just linting:
-
-```sh
-$ npm run lint
-$ npm run lint:fix
+```
+# .env
+WEB_APP_VERSION=$npm_package_version
+WEB_APP_DOMAIN=www.example.com
+WEB_APP_FOO=$DOMAIN/foo
 ```
 
-Feel free to add a [testing framework](https://github.com/sorrycc/awesome-javascript#testing-frameworks) of your choice.
+## Build
 
-You can build the production app (to test locally before deploying):
+You can build the production app locally:
 
 ```sh
-# git stash
-$ sed -i '' '/homepage/d' package.json
 $ npm run build
-# git checkout -- package.json
-# git stash pop
-```
 
-Start a server:
+# if your app is hosted at a subdirectory
+$ mv build $(node -p "require('./package').name") # web-app-template
 
-```sh
+# if your app is hosted at the root
 $ cd build
-$ python -m SimpleHTTPServer
-# press `Ctrl + C` to stop the server
 ```
 
-View the app:
+Start the server:
 
 ```sh
+$ python -m SimpleHTTPServer
+```
+
+Stop the server with `Ctrl + C`.
+
+View the app in a new Terminal tab or window:
+
+```sh
+# if your app is hosted at a subdirectory, make sure to click on the folder
 $ open http://localhost:8000
+```
+
+Don't forget to clean up the build directory after you're done:
+
+```sh
+# if your app is hosted at a subdirectory
+$ rm -rf $(node -p "require('./package').name") # web-app-template
+
+# if your app is hosted at the root
+$ rm -rf build
 ```
 
 ## Layout
 
-Directory structure (dotfiles are omitted):
+Directory structure omitting dotfiles:
 
 ```sh
 $ tree -I 'build|node_modules'
 .
 ├── LICENSE
 ├── README.md
-├── config
-│   ├── env.js
-│   ├── modules.js
-│   ├── paths.js
-│   ├── pnpTs.js
-│   ├── webpack.config.js
-│   └── webpackDevServer.config.js
 ├── package.json
 ├── public
 │   ├── favicon.ico
@@ -163,30 +168,14 @@ $ tree -I 'build|node_modules'
 │   ├── manifest.json
 │   └── robots.txt
 ├── scripts
-│   ├── build.js
-│   └── start.js
+│   └── deploy.sh
 └── src
     ├── index.css
     ├── index.js
     └── serviceWorker.js
 
-4 directories, 20 files
+3 directories, 13 files
 ```
-
-## Diff
-
-Compared to `create-react-app`, the additional dependencies saved to `package.json` are:
-
-- [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
-- [@commitlint/{cli,config-conventional}](https://github.com/conventional-changelog/commitlint)
-- [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel)
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-- [gitploy](https://github.com/remarkablemark/gitploy)
-- [husky](https://github.com/typicode/husky)
-- [jsonlint](https://github.com/zaach/jsonlint)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [prettier](https://github.com/prettier/prettier)
-- [standard-version](https://github.com/conventional-changelog/standard-version)
 
 ## License
 

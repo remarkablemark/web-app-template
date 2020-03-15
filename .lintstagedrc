@@ -1,11 +1,7 @@
 {
-  "*.js": [
-    "npm run lint:fix",
-    "git add"
-  ],
-  "*.{json,css,md}": [
+  "*.{css,js,json,md}": [
     "prettier --write",
     "git add"
   ],
-  ".*{rc,json},!.browserslistrc": "jsonlint"
+  ".*{json,rc},!.browserslistrc": "jsonlint"
 }
