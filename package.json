@@ -8,13 +8,14 @@
     "clean": "rm -rf build",
     "deploy": "scripts/deploy.sh",
     "release": "standard-version --no-verify",
-    "start": "web-scripts start"
+    "start": "web-scripts start",
+    "test": "web-scripts test"
   },
   "homepage": "https://remarkablemark.github.io/web-app-template/",
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@descriptive/web-scripts": "1.0.0",
+    "@descriptive/web-scripts": "1.0.1",
     "gitploy": "0.1.0",
     "husky": "3.0.9",
     "jsonlint": "1.6.3",
