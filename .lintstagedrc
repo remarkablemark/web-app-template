@@ -1,7 +1,4 @@
 {
-  "*.{css,js,json,md}": [
-    "prettier --write",
-    "git add"
-  ],
+  "*.{css,js,json,md}": "prettier --write",
   ".*{json,rc},!.browserslistrc": "jsonlint"
 }
