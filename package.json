@@ -6,7 +6,7 @@
   "scripts": {
     "build": "web-scripts build",
     "clean": "rm -rf build",
-    "deploy": "scripts/deploy.sh",
+    "deploy": "npm run clean && npm run build && gitploy build gh-pages",
     "release": "standard-version --no-verify",
     "start": "web-scripts start",
     "test": "web-scripts test"
