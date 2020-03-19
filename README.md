@@ -150,8 +150,8 @@ Stop the server with `Ctrl + C`.
 View the app in a new Terminal tab or window:
 
 ```sh
-# if your app is hosted at a subdirectory, make sure to click on the folder
 $ open http://localhost:8000
+# if your app is hosted at a subdirectory, make sure to open the directory
 ```
 
 Don't forget to clean up the build directory after you're done:
@@ -181,14 +181,12 @@ $ tree -I 'build|node_modules'
 │   ├── logo512.png
 │   ├── manifest.json
 │   └── robots.txt
-├── scripts
-│   └── deploy.sh
 └── src
     ├── index.css
     ├── index.js
     └── serviceWorker.js
 
-3 directories, 13 files
+2 directories, 12 files
 ```
 
 ## License
