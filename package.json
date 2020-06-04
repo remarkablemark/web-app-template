@@ -7,6 +7,8 @@
     "build": "web-scripts build",
     "clean": "rm -rf build",
     "deploy": "npm run clean && npm run build && gitploy build gh-pages",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix",
     "release": "standard-version --no-verify",
     "start": "web-scripts start",
     "test": "web-scripts test"
@@ -16,6 +18,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@descriptive/web-scripts": "1.0.1",
+    "eslint-plugin-prettier": "^3.1.3",
     "gitploy": "0.1.0",
     "husky": "^4.2.3",
     "jsonlint": "^1.6.3",
