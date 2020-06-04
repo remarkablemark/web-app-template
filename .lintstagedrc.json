@@ -1,4 +1,4 @@
 {
-  "*.{css,js,json,md}": "prettier --write",
-  ".*{json,rc},!.browserslistrc": "jsonlint"
+  "*.js": "npm run lint:fix",
+  "*.{css,html,json,md,yml}": "prettier --write"
 }
