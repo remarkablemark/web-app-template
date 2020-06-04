@@ -1,6 +1,6 @@
 {
   "name": "web-app-template",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "A template for framework-agnostic web apps.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {

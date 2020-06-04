@@ -94,12 +94,6 @@ See the section about [deployment](https://create-react-app.dev/docs/deployment/
 
 Bumps the `package.json` version with [standard-version](https://github.com/conventional-changelog/standard-version).
 
-For your first release, generate it by running:
-
-```sh
-$ npm run release -- --first-release
-```
-
 ### `npm run deploy`
 
 Deploys the app to [GitHub Pages](https://pages.github.com/) by force pushing the `build` folder to the remote repository's `gh-pages` branch.
