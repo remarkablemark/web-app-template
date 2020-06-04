@@ -23,7 +23,7 @@
     "gitploy": "0.1.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "standard-version": "^7.1.0"
   },
   "private": true,
