@@ -21,10 +21,10 @@
     "@descriptive/web-scripts": "1.0.1",
     "eslint-plugin-prettier": "^3.1.3",
     "gitploy": "0.1.0",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
-    "standard-version": "^7.1.0"
+    "standard-version": "^8.0.0"
   },
   "private": true,
   "license": "MIT"
