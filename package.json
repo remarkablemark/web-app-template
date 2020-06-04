@@ -14,7 +14,6 @@
     "test": "web-scripts test",
     "test:ci": "CI=true npm test -- --passWithNoTests"
   },
-  "homepage": "https://remarkablemark.github.io/web-app-template/",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
