@@ -8,8 +8,8 @@ This project is similar to an app bootstrapped with [Create React App](https://g
 
 ## Prerequisites
 
-- [Node.js 8.10+](https://nodejs.org/en/download/)
-- [npm 5.6+](https://www.npmjs.com/get-npm) or [Yarn 1+](https://yarnpkg.com/lang/en/docs/install/)
+- [Node.js >=10](https://nodejs.org/en/download/)
+- [npm >=5.6](https://www.npmjs.com/get-npm) or [Yarn >=1](https://yarnpkg.com/lang/en/docs/install/)
 
 ## Installation
 
