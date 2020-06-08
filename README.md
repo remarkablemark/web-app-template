@@ -2,9 +2,9 @@
 
 A web app template that is framework agnostic.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) but dependencies like React have been removed.
+This project is similar to an app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) except dependencies like React are removed. [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts) is used instead of [react-scripts](https://www.npmjs.com/package/react-scripts).
 
-[View app](https://remarkablemark.github.io/web-app-template/)
+[View app.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
