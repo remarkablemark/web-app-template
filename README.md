@@ -2,7 +2,7 @@
 
 A web app template that is framework agnostic.
 
-This project is similar to an app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) except dependencies like React are removed. [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts) is used instead of [react-scripts](https://www.npmjs.com/package/react-scripts).
+This project is similar to an app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) except dependencies like React are removed.
 
 [View app.](https://remarkablemark.github.io/web-app-template/)
 
@@ -63,6 +63,16 @@ When you're ready, you can [push the local repository to GitHub](https://help.gi
 git remote add origin <remote-repository-url>
 git push origin -u origin master
 ```
+
+## Migration
+
+Migrate your web app to use [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
+
+```sh
+npx https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6
+```
+
+See [article](https://remarkablemark.org/blog/2020/06/06/web-app-template/) or [gist](https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6).
 
 ## Available Scripts
 
