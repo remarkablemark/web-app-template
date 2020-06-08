@@ -16,15 +16,15 @@ This project is similar to an app bootstrapped with [Create React App](https://g
 Clone repository:
 
 ```sh
-$ git clone https://github.com/remarkablemark/web-app-template.git
+git clone https://github.com/remarkablemark/web-app-template.git
 ```
 
 Rename project (replace `my-app` and `My App` with your app name):
 
 ```sh
-$ mv web-app-template my-app && cd $_
-$ git grep -l web-app-template | xargs sed -i '' -e 's/web-app-template/my-app/g'
-$ git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App/g'
+mv web-app-template my-app && cd $_
+git grep -l web-app-template | xargs sed -i '' -e 's/web-app-template/my-app/g'
+git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App/g'
 ```
 
 Update files:
@@ -38,21 +38,21 @@ Update files:
 Install dependencies:
 
 ```sh
-$ npm install
+npm install
 ```
 
 Initialize new repository:
 
 ```sh
-$ rm -rf .git
-$ git init
+rm -rf .git
+git init
 ```
 
 Make first commit:
 
 ```sh
-$ git add .
-$ git commit -m "feat: initialize project from web-app-template"
+git add .
+git commit -m "feat: initialize project from web-app-template"
 ```
 
 > Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used during release.
@@ -60,8 +60,8 @@ $ git commit -m "feat: initialize project from web-app-template"
 When you're ready, you can [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or another remote repository:
 
 ```sh
-$ git remote add origin <remote-repository-url>
-$ git push origin -u origin master
+git remote add origin <remote-repository-url>
+git push origin -u origin master
 ```
 
 ## Available Scripts
@@ -116,7 +116,7 @@ WEB_APP_FOO=$DOMAIN/foo
 Tests are run just like [Create React App](https://create-react-app.dev/docs/running-tests):
 
 ```sh
-$ npm test
+npm test
 ```
 
 ## Build
@@ -124,19 +124,19 @@ $ npm test
 You can build the production app locally:
 
 ```sh
-$ npm run build
+npm run build
 
 # if your app is hosted at a subdirectory
-$ mv build $(node -p "require('./package').name") # web-app-template
+mv build $(node -p "require('./package').name") # web-app-template
 
 # if your app is hosted at the root
-$ cd build
+cd build
 ```
 
 Start the server:
 
 ```sh
-$ python -m SimpleHTTPServer
+python -m SimpleHTTPServer
 ```
 
 Stop the server with `Ctrl + C`.
@@ -144,7 +144,7 @@ Stop the server with `Ctrl + C`.
 View the app in a new Terminal tab or window:
 
 ```sh
-$ open http://localhost:8000
+open http://localhost:8000
 # if your app is hosted at a subdirectory, make sure to open the directory
 ```
 
@@ -152,10 +152,10 @@ Don't forget to clean up the build directory after you're done:
 
 ```sh
 # if your app is hosted at a subdirectory
-$ rm -rf $(node -p "require('./package').name") # web-app-template
+rm -rf $(node -p "require('./package').name") # web-app-template
 
 # if your app is hosted at the root
-$ rm -rf build
+rm -rf build
 ```
 
 ## Layout
@@ -163,7 +163,7 @@ $ rm -rf build
 Directory structure omitting dotfiles:
 
 ```sh
-$ tree -I 'build|node_modules'
+tree -I 'build|node_modules'
 .
 ├── LICENSE
 ├── README.md
