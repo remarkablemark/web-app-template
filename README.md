@@ -69,10 +69,10 @@ git push origin -u origin master
 Migrate your web app to use [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
 
 ```sh
-npx https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6
+npx web-scripts-migration
 ```
 
-See [article](https://remarkablemark.org/blog/2020/06/06/web-app-template/) or [gist](https://gist.github.com/remarkablemark/f3644d65665dc07a91d7f7202c5a66b6).
+See [article](https://remarkablemark.org/blog/2020/06/06/web-app-template/#migration) or [web-scripts-migration](https://www.npmjs.com/package/web-scripts-migration).
 
 ## Available Scripts
 
