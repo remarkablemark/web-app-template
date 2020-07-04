@@ -4,7 +4,7 @@ Framework agnostic web app template.
 
 This project is like [CRA](https://github.com/facebook/create-react-app) app except React is removed.
 
-[View web app.](https://remarkablemark.github.io/web-app-template/)
+[View the web app.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ Migrate your web app to use [@descriptive/web-scripts](https://www.npmjs.com/pac
 npx web-scripts-migration
 ```
 
-See [article](https://remarkablemark.org/blog/2020/06/06/web-app-template/#migration) or [web-scripts-migration](https://www.npmjs.com/package/web-scripts-migration).
+See [blog post](https://remarkablemark.org/blog/2020/06/06/web-app-template/#migration) or [web-scripts-migration](https://www.npmjs.com/package/web-scripts-migration).
 
 ## Available Scripts
 
