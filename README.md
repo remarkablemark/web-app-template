@@ -1,10 +1,10 @@
 # web-app-template
 
-A web app template that is framework agnostic.
+Framework agnostic web app template.
 
-This project is similar to an app bootstrapped with [Create React App](https://github.com/facebook/create-react-app) except dependencies like React are removed.
+This project is like [CRA](https://github.com/facebook/create-react-app) app except React is removed.
 
-[View app.](https://remarkablemark.github.io/web-app-template/)
+[View web app.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
@@ -13,13 +13,13 @@ This project is similar to an app bootstrapped with [Create React App](https://g
 
 ## Installation
 
-Clone repository:
+Clone the repository:
 
 ```sh
 git clone https://github.com/remarkablemark/web-app-template.git
 ```
 
-Rename project (replace `my-app` and `My App` with your app name):
+Rename the project (replace `my-app` and `My App` with your app name):
 
 ```sh
 mv web-app-template my-app && cd $_
@@ -27,7 +27,7 @@ git grep -l web-app-template | xargs sed -i '' -e 's/web-app-template/my-app/g'
 git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App/g'
 ```
 
-Update files:
+Update the files:
 
 - [ ] `README.md`
 - [ ] `package.json`
@@ -35,20 +35,20 @@ Update files:
 - [ ] `public/manifest.json`
 - [ ] `src/index.js`
 
-Install dependencies:
+Install the dependencies:
 
 ```sh
 npm install
 ```
 
-Initialize new repository:
+Initialize a new repository:
 
 ```sh
 rm -rf .git
 git init
 ```
 
-Make first commit:
+Make your first commit:
 
 ```sh
 git add .
@@ -57,7 +57,7 @@ git commit -m "feat: initialize project from web-app-template"
 
 > Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used during release.
 
-When you're ready, you can [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) or another remote repository:
+Once you're ready, [push the local repository to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) (or another remote repository):
 
 ```sh
 git remote add origin <remote-repository-url>
@@ -170,7 +170,7 @@ rm -rf build
 
 ## Layout
 
-Directory structure omitting dotfiles:
+Directory structure (with dotfiles omitted):
 
 ```sh
 tree -I 'build|node_modules'
