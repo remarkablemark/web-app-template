@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,oDAAwD,CACxD,QAAS,CACT,YACF,CAEA,EACE,aACF","file":"main.234bec37.chunk.css","sourcesContent":["body {\n  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;\n  margin: 0;\n  padding: 50px;\n}\n\na {\n  color: #00b7ff;\n}\n"]}

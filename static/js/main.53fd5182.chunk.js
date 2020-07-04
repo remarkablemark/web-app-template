@@ -1,0 +1,2 @@
+(this["webpackJsonpweb-app-template"]=this["webpackJsonpweb-app-template"]||[]).push([[0],[function(e,n,t){"use strict";t.r(n);t(1);document.getElementById("app").innerHTML='\n  <h1>Welcome to <code>web-app-template</code></h1>\n  <a\n    href="https://github.com/remarkablemark/web-app-template"\n    target="_blank"\n    rel="noopener noreferrer"\n  >\n    View Source\n  </a>\n'},function(e,n,t){}],[[0,1]]]);
+//# sourceMappingURL=main.53fd5182.chunk.js.map
