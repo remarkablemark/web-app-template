@@ -1,30 +1,28 @@
 # web-app-template
 
-Framework agnostic web app template.
+Framework agnostic web app template. This project is like [Create React App](https://github.com/facebook/create-react-app) except React is removed.
 
-This project is like [CRA](https://github.com/facebook/create-react-app) app except React is removed.
-
-[View the web app.](https://remarkablemark.github.io/web-app-template/)
+[View web app.](https://remarkablemark.github.io/web-app-template/)
 
 ## Prerequisites
 
-- [Node.js >=10](https://nodejs.org/en/download/)
-- [npm >=5.6](https://www.npmjs.com/get-npm) or [Yarn >=1](https://yarnpkg.com/lang/en/docs/install/)
+- [Node.js](https://nodejs.org/en/download/)
 
-## Installation
+## Install
 
 Clone the repository:
 
 ```sh
 git clone https://github.com/remarkablemark/web-app-template.git
+cd web-app-template
 ```
 
-Rename the project (replace `my-app` and `My App` with your app name):
+Rename the project:
 
 ```sh
-mv web-app-template my-app && cd $_
 git grep -l web-app-template | xargs sed -i '' -e 's/web-app-template/my-app/g'
-git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App/g'
+git grep -l 'Web App Template' | xargs sed -i '' -e 's/Web App Template/My App Template/g'
+git grep -l 'Web App' | xargs sed -i '' -e 's/Web App/My App/g'
 ```
 
 Update the files:
@@ -52,7 +50,7 @@ Make your first commit:
 
 ```sh
 git add .
-git commit -m "feat: initialize project from web-app-template"
+git commit -m 'feat: initialize project from web-app-template'
 ```
 
 > Commit messages follow the [Conventional Commits](https://conventionalcommits.org/) format, which is used during release.
@@ -63,16 +61,6 @@ Once you're ready, [push the local repository to GitHub](https://help.github.com
 git remote add origin <remote-repository-url>
 git push origin -u origin master
 ```
-
-## Migration
-
-Migrate your web app to use [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
-
-```sh
-npx web-scripts-migration
-```
-
-See [blog post](https://remarkablemark.org/blog/2020/06/06/web-app-template/#migration) or [web-scripts-migration](https://www.npmjs.com/package/web-scripts-migration).
 
 ## Available Scripts
 
@@ -195,10 +183,21 @@ tree -I 'build|node_modules'
 └── src
     ├── index.css
     ├── index.js
-    └── serviceWorker.js
+    ├── reportWebVitals.js
+    └── setupTests.js
 
-2 directories, 12 files
+2 directories, 13 files
 ```
+
+## Migration
+
+Migrate to use [@descriptive/web-scripts](https://www.npmjs.com/package/@descriptive/web-scripts):
+
+```sh
+npx web-scripts-migration
+```
+
+See [blog post](https://remarkablemark.org/blog/2020/06/06/web-app-template/#migration) or [web-scripts-migration](https://www.npmjs.com/package/web-scripts-migration).
 
 ## License
 
