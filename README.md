@@ -165,7 +165,7 @@ rm -rf build
 
 ## Layout
 
-Directory structure (with dotfiles omitted):
+Directory structure (dotfiles are omitted):
 
 ```sh
 tree -I 'build|node_modules'
